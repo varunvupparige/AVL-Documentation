@@ -1,1 +1,6 @@
-# Stack_1.0_Planning-Control-Documentation
+## Autonomous Vehicle Lab - Stack 1.0
+
+## Planning and Control Documentation
+
+# Introduction
+

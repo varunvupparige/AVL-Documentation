@@ -63,9 +63,12 @@ The above installation instructions is according to the repo maintained by gtrll
 Simulations
 ------
   
-!.[.](images/arch_1.png)  
+![](Images/algo.png)    
   
  In this section, we explain the details regarding different simulations performed using the data collected by our golf cart. The above figure briefly summarises the trajectory optimization algorithm of GPMP2. These simulations were performed for static obstacles only using the rosbag file. Different constraints on the objective function are: obstacles, velocity and kinematic model. 
+  
+  
+![](Images/arch_1.png)
   
   - rosbag: bags are primary mechanism in ROS for data logging. They are used to record campus golf cart data and used in this project for multiple uses.
   - bag to csv package: this ros package is used to convert different topics from ros bag into csv files to be used for post processing.
@@ -73,6 +76,20 @@ Simulations
   - ref traj: this reference trajectory is generated from stack 1.0 to identify lane widths and pavements.
   - map gen: this python scripts is used to generate static binary occupancy grid map involving the ego car and obstacles.
   - gpmp2 py: this python script optimizes the trajectory using GTSAM and GPMP2 framework
+  
+ 
+![](Images/arch_2.png)
+  
+  We performed simulations by including multiple obstacles and changing different parameters which are explained below. The result images can be found in the sim_results folder.
+  
+  ### Parameters
+  
+  - Input: start pose, end pose, velocity
+  - Factor Graph: prior factor, vehicle dyanamics factor and obstacle factor
+  - Optimizer: DogLeg or GN optimizer
+  - Time settings: total steps, step size, interpolation
+  - SDF: 2D signed distance field, cost_sigma, epsilon distance
+  - Threshold: goal_reg and error threshold
   
 
   

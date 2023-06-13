@@ -4,6 +4,8 @@
 Introduction
   ------
   In this project, we are implementing the Gaussian Process Motion Planner 2 for obstacle avoidance and overtaking. Essentially, we are trying to solve a trajectory optimization problem given an objective function that encodes an obstacle-free path given path-bound and motion constraints. In order to decrease the complexity of the optimization problem, the constraints are modeled using factor graphs. This [presentation](https://docs.google.com/presentation/d/1ZoLBGickJ4J_u8gwf0Yo5HJRKpALoE5dWvXm1L0Vx3w/edit#slide=id.g20465bf9602_0_0) contains details about the architecture and initial python simulation results. The initial simulation was done on datasets from the summer of 2019 which mimic the static obstacle avoidance scenarios.
+  
+  <img src="./Images/UCSD_GPMP2.gif" align="center" ></a>
 
 Relevant Links:
 [Literature](https://faculty.cc.gatech.edu/~bboots3/files/GPMP2.pdf) | [GPMP2 Github](https://faculty.cc.gatech.edu/~bboots3/files/GPMP2.pdf) | [Simulation](https://github.com/AutonomousVehicleLaboratory/UCSD_AVL_GPMP2)  
@@ -68,7 +70,7 @@ Simulations
  In this section, we explain the details regarding different simulations performed using the data collected by our golf cart. The above figure briefly summarises the trajectory optimization algorithm of GPMP2. These simulations were performed for static obstacles only using the rosbag file. Different constraints on the objective function are: obstacles, velocity and kinematic model. 
   
   
-![](Images/arch_1.png)
+![](Images/arch_1)
   
   - rosbag: bags are primary mechanism in ROS for data logging. They are used to record campus golf cart data and used in this project for multiple uses.
   - bag to csv package: this ros package is used to convert different topics from ros bag into csv files to be used for post processing.
@@ -78,7 +80,7 @@ Simulations
   - gpmp2 py: this python script optimizes the trajectory using GTSAM and GPMP2 framework
   
  
-![](Images/arch_2.png)
+![](Images/arch_2)
   
   We performed simulations by including multiple obstacles and changing different parameters which are explained below. The result images can be found in the sim_results folder.
   

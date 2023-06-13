@@ -3,7 +3,7 @@
 
 Introduction
   ------
-  In this project, we are implementing the Gaussian Process Motion Planner 2 for obstacle avoidance and overtaking. Essentially, we are trying to solve a trajectory optimization problem given an objective function that encodes an obstacle-free path given path-bound and motion constraints. In order to decrease the complexity of the optimization problem, the constraints are modeled using factor graphs. This [presentation](https://docs.google.com/presentation/d/1ZoLBGickJ4J_u8gwf0Yo5HJRKpALoE5dWvXm1L0Vx3w/edit#slide=id.g20465bf9602_0_0) contains details about the architecture and initial python simulation results. The initial simulation was done on datasets from the summer of 2019 which mimic the static obstacle avoidance scenarios.
+  In this project, we are implementing the Gaussian Process Motion Planner 2 for obstacle avoidance and overtaking. Essentially, we are trying to solve a trajectory optimization problem given an objective function that encodes an obstacle-free path given path-bound and motion constraints. In order to decrease the complexity of the optimization problem, the constraints are modeled using factor graphs. The initial simulation was done on datasets from the summer of 2019 which mimic the static obstacle avoidance scenarios.
   
   <img src="./Images/UCSD_GPMP2.gif" align="center" ></a>
 
